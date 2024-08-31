@@ -1,0 +1,99 @@
+:root {
+  --color-bg: white;
+  --color-text-primary: #0e0e0e;
+  --color-text-secondary: #87AAAA;
+  --color-text-main: #2e2e2e;
+
+  --font-size-medium: 1.125em;
+
+  --body-font: "HKGrotesk", sans-serif;
+  --headline-font: "HKGrotesk-Medium", sans-serif;
+  /* --body-font-italic: "MonumentGroteskItalic",sans-serif;
+  --numeric-font: "ReplicaMonoLLWeb-Regular",sans-serif;
+  --main-padding: 6% */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0e0e0e;
+    --color-text-primary: white;
+    --color-text-secondary: #87AAAA;
+    --color-text-main: #a0a0a0;
+  }
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  src: url(HKGrotesk-Regular.woff2)format("woff2")
+}
+
+@font-face {
+  font-family: HKGrotesk-Medium;
+  src: url(HKGrotesk-Medium.woff2)format("woff2")
+}
+
+@font-face {
+  font-family: HKGrotesk-Bold;
+  src: url(HKGrotesk-Bold.woff2)format("woff2")
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  padding: 4% 0 4% 6%;
+  font-size: 20px;
+  font-family: var(--body-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (width<=820px) {
+  body {
+    padding: 6% 4%;
+    font-size: 24px;
+  }
+}
+
+h1 {
+  line-height: 1.35em;
+  font-size: 4.05em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-family: var(--headline-font);
+}
+
+h2 {
+  line-height: 2.5em;
+  color: var(--color-text-secondary)
+}
+
+section {
+  max-width: 35em;
+  margin-bottom: 5em;
+}
+
+section p {
+  font-size: var(--font-size-medium);
+  line-height: 1.15em;
+  font-weight: 400;
+}
+
+.intro h1 {
+  text-transform: lowercase;
+}
+
+.intro .name {
+  color: var(--color-text-primary)
+}
+
+.primary {
+  color: var(--color-text-primary)
+}
+
+a {
+  color: var(--color-text-main);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text-primary);
+}
