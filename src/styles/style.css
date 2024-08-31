@@ -2,15 +2,12 @@
   --color-bg: white;
   --color-text-primary: #0e0e0e;
   --color-text-secondary: #87AAAA;
-  --color-text-main: #2e2e2e;
+  --color-text-main: #5e5e5e;
 
   --font-size-medium: 1.125em;
 
   --body-font: "HKGrotesk", sans-serif;
   --headline-font: "HKGrotesk-Medium", sans-serif;
-  /* --body-font-italic: "MonumentGroteskItalic",sans-serif;
-  --numeric-font: "ReplicaMonoLLWeb-Regular",sans-serif;
-  --main-padding: 6% */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,8 +53,8 @@ body {
 h1 {
   line-height: 1.35em;
   font-size: 4.05em;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   font-family: var(--headline-font);
 }
 
@@ -91,9 +88,33 @@ section p {
 
 a {
   color: var(--color-text-main);
-  text-decoration: none;
+  text-decoration-thickness: 0.05em;
+  /* text-decoration: none; */
 }
 
 a:hover {
   color: var(--color-text-primary);
+}
+
+.contact li {
+  margin-top: 0.5em;
+}
+
+.contact a::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  background-color: var(--color-text-primary);
+  mask-size: 1em;
+  margin-right: .7em;
+}
+
+.i-mail::before {
+  mask-image: url("mail.svg");
+}
+
+.i-linkedin::before {
+  mask-image: url("linkedin.svg");
 }
