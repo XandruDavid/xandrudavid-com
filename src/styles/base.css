@@ -20,13 +20,15 @@ body {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
 h1 {
   line-height: 1.1;
   font-size: clamp(2.5rem, 8vw + 1rem, 4.5rem);
-  font-family: var(--heading-font);
   font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
   margin-bottom: 0.2em;
 }
 
@@ -34,9 +36,8 @@ h2 {
   line-height: 1.5;
   margin-bottom: 1em;
   color: var(--color-text-accent);
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-family: var(--heading-font);
+  font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem);
+  font-optical-sizing: auto;
   text-transform: lowercase;
 }
 
@@ -46,7 +47,7 @@ section {
 }
 
 section p {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 a {
