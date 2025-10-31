@@ -1,0 +1,18 @@
+:root {
+  --color-bg: white;
+  --color-text-primary: #0e0e0e;
+  --color-text-secondary: #87AAAA;
+  --color-text-main: #5e5e5e;
+
+  --font-size-medium: 1.125em;
+  --body-font: "HKGrotesk", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0e0e0e;
+    --color-text-primary: white;
+    --color-text-secondary: #87AAAA;
+    --color-text-main: #a0a0a0;
+  }
+}

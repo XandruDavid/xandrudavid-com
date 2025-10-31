@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: 100;
+  src: url(HKGrotesk-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: 400;
+  src: url(HKGrotesk-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: 600;
+  src: url(HKGrotesk-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: 800;
+  src: url(HKGrotesk-Bold.woff2) format("woff2");
+}
