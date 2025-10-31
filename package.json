@@ -1,16 +1,20 @@
 {
-  "name": "xandru-david-com",
+  "name": "xandrudavid-com",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Personal website built with minimal tooling",
   "scripts": {
     "start": "npx @11ty/eleventy --serve --port 3020",
     "build": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["personal-website", "portfolio"],
+  "author": "Alexandru David <xandru.david@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XandruDavid/xandrudavid-com.git"
+  },
+  "homepage": "https://xandrudavid.com",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2"
   }
