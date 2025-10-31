@@ -7,7 +7,6 @@
   --font-size-medium: 1.125em;
 
   --body-font: "HKGrotesk", sans-serif;
-  --headline-font: "HKGrotesk-Medium", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,16 +20,25 @@
 
 @font-face {
   font-family: HKGrotesk;
+  font-weight: 400;
   src: url(HKGrotesk-Regular.woff2)format("woff2")
 }
 
 @font-face {
-  font-family: HKGrotesk-Medium;
+  font-family: HKGrotesk;
+  font-weight: 100;
+  src: url(HKGrotesk-Light.woff2)format("woff2")
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: 600;
   src: url(HKGrotesk-Medium.woff2)format("woff2")
 }
 
 @font-face {
-  font-family: HKGrotesk-Bold;
+  font-family: HKGrotesk;
+  font-weight: 800;
   src: url(HKGrotesk-Bold.woff2)format("woff2")
 }
 
@@ -46,21 +54,28 @@ body {
 @media (width<=820px) {
   body {
     padding: 6% 4%;
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
 h1 {
-  line-height: 1.35em;
-  font-size: 4.05em;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  font-family: var(--headline-font);
+  line-height: 1.1em;
+  font-size: 3.55em;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 0.2em;
 }
 
 h2 {
-  line-height: 2.5em;
-  color: var(--color-text-secondary)
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  color: var(--color-text-secondary);
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  text-transform: lowercase;
 }
 
 section {
@@ -71,7 +86,8 @@ section {
 section p {
   font-size: var(--font-size-medium);
   line-height: 1.15em;
-  font-weight: 400;
+  font-weight: lighter;
+  color: var(--color-text-primary);
 }
 
 .intro h1 {
@@ -89,7 +105,6 @@ section p {
 a {
   color: var(--color-text-main);
   text-decoration-thickness: 0.05em;
-  /* text-decoration: none; */
 }
 
 a:hover {
@@ -117,4 +132,20 @@ a:hover {
 
 .i-linkedin::before {
   mask-image: url("linkedin.svg");
+}
+
+.employment li {
+  margin-bottom: 1em;
+}
+
+.employment .role {
+  font-size: var(--font-size-medium);
+}
+.employment .period {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.employment .employer {
+  color: var(--color-text-primary);
 }
