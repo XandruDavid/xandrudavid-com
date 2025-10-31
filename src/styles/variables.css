@@ -4,8 +4,8 @@
   --color-text-muted: color-mix(in srgb, var(--color-text-base) 60%, var(--color-bg));
   --color-text-accent: #355555;
 
-  --font-size-base: 20px;
-  --font-size-medium: 1.4rem;
+  --font-size-base: 22px;
+  --font-size-small: 1.2rem;
   --body-font: "HKGrotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --heading-font: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
