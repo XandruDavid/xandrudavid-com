@@ -1,18 +1,22 @@
 :root {
-  --color-bg: white;
-  --color-text-primary: #0e0e0e;
-  --color-text-secondary: #87AAAA;
-  --color-text-main: #5e5e5e;
+  --color-bg: #f1f1f1;
+  --color-text-base: #0e0e0e;
+  --color-text-muted: #888888;
+  --color-text-accent: #355555;
 
-  --font-size-medium: 1.125em;
-  --body-font: "HKGrotesk", sans-serif;
+  --font-size-base: 20px;
+  --font-size-medium: 1.4rem;
+  --body-font: "HKGrotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --breakpoint-mobile: 820px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #0e0e0e;
-    --color-text-primary: white;
-    --color-text-secondary: #87AAAA;
-    --color-text-main: #a0a0a0;
+    --color-text-base: white;
+    --color-text-muted: #a0a0a0;
+    --color-text-accent: #87AAAA;
   }
 }

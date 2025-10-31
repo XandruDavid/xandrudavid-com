@@ -1,13 +1,19 @@
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text-main);
-  padding: 4% 0 4% 6%;
-  font-size: 20px;
-  font-family: var(--body-font);
-  -webkit-font-smoothing: antialiased;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (width <= 820px) {
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-base);
+  padding: 4% 6%;
+  font-size: var(--font-size-base);
+  font-family: var(--body-font);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (width <= var(--breakpoint-mobile)) {
   body {
     padding: 6% 4%;
     font-size: 18px;
@@ -15,9 +21,9 @@ body {
 }
 
 h1 {
-  line-height: 1.1em;
-  font-size: 3.55em;
-  font-family: "Raleway", sans-serif;
+  line-height: 1.1;
+  font-size: clamp(2.5rem, 8vw + 1rem, 4.5rem);
+  font-family: var(--heading-font);
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -25,12 +31,12 @@ h1 {
 }
 
 h2 {
-  line-height: 1.5em;
+  line-height: 1.5;
   margin-bottom: 1em;
-  color: var(--color-text-secondary);
-  font-size: 1.2em;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  color: var(--color-text-accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--heading-font);
   text-transform: lowercase;
 }
 
@@ -41,20 +47,36 @@ section {
 
 section p {
   font-size: var(--font-size-medium);
-  line-height: 1.15em;
-  font-weight: lighter;
-  color: var(--color-text-primary);
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--color-text-base);
 }
 
 a {
-  color: var(--color-text-main);
+  color: var(--color-text-muted);
   text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--color-text-primary);
+  color: var(--color-text-base);
+}
+
+a:focus {
+  outline: 2px solid var(--color-text-base);
+  outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-text-base);
+  outline-offset: 2px;
 }
 
 .primary {
-  color: var(--color-text-primary);
+  color: var(--color-text-base);
 }
