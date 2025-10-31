@@ -1,7 +1,7 @@
 :root {
   --color-bg: #f1f1f1;
-  --color-text-base: #0e0e0e;
-  --color-text-muted: #888888;
+  --color-text-base: hsl(0, 0%, 0%);
+  --color-text-muted: color-mix(in srgb, var(--color-text-base) 60%, var(--color-bg));
   --color-text-accent: #355555;
 
   --font-size-base: 20px;
@@ -15,8 +15,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #0e0e0e;
-    --color-text-base: white;
-    --color-text-muted: #a0a0a0;
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-text-muted: color-mix(in srgb, var(--color-text-base) 60%, var(--color-bg));
     --color-text-accent: #87AAAA;
   }
 }
