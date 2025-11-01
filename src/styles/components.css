@@ -25,12 +25,16 @@
   margin-right: 0.5em;
 }
 
-.i-mail::before {
+.icon-mail::before {
   mask-image: url("mail.svg");
 }
 
-.i-linkedin::before {
+.icon-linkedin::before {
   mask-image: url("linkedin.svg");
+}
+
+.icon-github::before {
+  mask-image: url("github.svg");
 }
 
 .employment {
