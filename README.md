@@ -1,6 +1,6 @@
 # xandrudavid.com
 
-[![Deploy Status](https://github.com/XandruDavid/xandrudavid/actions/workflows/deploy.yml/badge.svg)](https://github.com/XandruDavid/xandrudavid/actions/workflows/deploy.yml)
+[![Deploy Status](https://github.com/XandruDavid/xandrudavid-com/actions/workflows/deploy.yml/badge.svg)](https://github.com/XandruDavid/xandrudavid/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Built with Eleventy](https://img.shields.io/badge/built%20with-Eleventy-green.svg)](https://www.11ty.dev/)
 
