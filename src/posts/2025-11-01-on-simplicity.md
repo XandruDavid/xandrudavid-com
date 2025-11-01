@@ -1,6 +1,6 @@
 ---
-title: On simplicity
+title: on simplicity
 date: 2025-11-01
 ---
 
-# On simplicity
+# on simplicity
