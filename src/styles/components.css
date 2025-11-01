@@ -37,6 +37,19 @@
   mask-image: url("github.svg");
 }
 
+.posts article h3 {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.posts article .post-date {
+  display: inline;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
 .employment {
   line-height: 1.3;
 }

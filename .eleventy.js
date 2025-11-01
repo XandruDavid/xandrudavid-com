@@ -10,6 +10,14 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("src/styles");
 
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return dateObj.getFullYear() + "/" + (dateObj.getMonth() + 1);
+  });
+
+  eleventyConfig.addFilter("lowercase", (str) => {
+    return str.toLowerCase();
+  });
+
   return {
     dir: {
       input: "src",
