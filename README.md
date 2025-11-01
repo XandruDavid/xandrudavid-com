@@ -33,6 +33,22 @@ npm run build
 
 The site is automatically deployed to GitHub Pages via GitHub Actions on every push to `main`.
 
+Everything is pushed to `main` applying [trunk-based development](https://trunkbaseddevelopment.com/). Features that are not ready for public are hidden behind feature flags.
+
+### Feature Flags
+
+To view feature-flagged content, add `?featureFlag=true` to the URL:
+
+https://xandrudavid.com/?featureFlag=true
+
+To hide any element behind the feature flag, add the `feature-flag` class:
+
+```html
+<section class="feature-flag">
+  <!-- Your work-in-progress content -->
+</section>
+```
+
 ## Commit Convention
 
 This project uses [Conventional Commits](https://www.conventionalcommits.org/):

@@ -15,6 +15,11 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <script>
+      if (new URLSearchParams(location.search).has('featureFlag')) {
+        document.documentElement.classList.add('feature-enabled');
+      }
+    </script>
   </head>
   <body>
     <section class="intro">
