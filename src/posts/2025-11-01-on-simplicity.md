@@ -61,6 +61,5 @@ and how simple pieces can be combined into a very complex result. I believe the 
 
 But the most important lesson, if there’s one thing I hope you take away from this post, is:
 <mark>Don’t make the mistake of thinking</mark> that simple code will only have simple results, or *even worse*, <mark>that complex and rich results require complex implementation.</mark>
-<!-- TODO: implement highlight style https://max.hn/blog/how-to-create-a-highlighter-marker-effect-in-css -->
 
 Don’t be afraid when presented with a seemingly complex requirement! Usually it’s all about finding the correct abstractions to implement it using simple concepts.

@@ -86,3 +86,28 @@ a:focus-visible {
 html.feature-enabled .feature-flag {
   display: block;
 }
+
+mark {
+  color: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  margin: 0 -0.4em;
+  padding: 0 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: 
+    linear-gradient(104deg, rgba(255, 225, 0, 0) 0.9%, rgba(255, 225, 0, 1.25) 2.4%, rgba(255, 225, 0, 0.5) 5.8%, rgba(255, 225, 0, 0.1) 93%, rgba(255, 225, 0, 0.7) 96%, rgba(255, 225, 0, 0) 98%),
+    linear-gradient(183deg, rgba(255, 225, 0, 0) 0%, rgba(255, 225, 0, 0.3) 7.9%, rgba(255, 225, 0, 0) 15%);
+  background-position: 0 0.3em;
+  background-size: 100% 0.9em;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@media (prefers-color-scheme: dark) {
+  mark {
+    background: 
+      linear-gradient(104deg, rgba(255, 250, 50, 0) 0.9%, rgba(255, 250, 50, 0.425) 2.4%, rgba(255, 250, 50, 0.20) 5.8%, rgba(255, 250, 50, 0.10) 93%, rgba(255, 250, 50, 0.35) 96%, rgba(255, 250, 50, 0) 98%),
+      linear-gradient(183deg, rgba(255, 250, 50, 0) 0%, rgba(255, 250, 50, 0.15) 7.9%, rgba(255, 250, 50, 0) 15%);
+  }
+}
